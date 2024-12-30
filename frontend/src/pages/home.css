@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.animated-gradient {
+    background: linear-gradient(45deg, #173756, #0c76df, #01182e, #a90e0e);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+.animate-gradient {
+    background: linear-gradient(45deg, #173756, #063f78, #01182e, #170227);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+.section3-bg {
+    background-image: url('../assets/sec3.jpg');
+    /* Relative path from index.css */
+    background-size: cover;
+    /* Ensure the image covers the section */
+    background-position: center;
+    /* Position the background image to show the top part */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+}
+
+.section5-bg {
+    background-image: url('./assets/bg5.jpg');
+    /* Relative path from index.css */
+    background-size: cover;
+    /* Ensure the image covers the section */
+    background-position: center;
+    /* Position the background image to show the top part */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+}
+
+/* Custom Animations */
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate__slideInUp {
+    animation: slideInUp 1s ease-out;
+}
+
+.animate__bounceIn {
+    animation: bounceIn 1s ease-out;
+}
+
+
+/*register page*/
+.placeholder-xs::placeholder {
+    font-size: 0.25rem;
+
+}
+
+/* form.css */
+
+.input-username .MuiInputBase-input::placeholder,
+.input-password .MuiInputBase-input::placeholder,
+.input-fullname .MuiInputBase-input::placeholder,
+.input-email .MuiInputBase-input::placeholder {
+    font-size: 12px;
+    color: rgba(197, 188, 188, 0.7);
+}
+
+.input-remember-me {
+    color: white !important;
+}
+
+
+
+
+.signup-toggle {
+    color: #fff;
+}
+
+.signup-form {
+    margin-top: -10px;
+}
+
+/*chat*/
